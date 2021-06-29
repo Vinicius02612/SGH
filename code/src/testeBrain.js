@@ -1,3 +1,5 @@
+//testando o brainsjs
+
 const brain = require('brain.js');
 
 const config = {
