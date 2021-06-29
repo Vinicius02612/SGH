@@ -1,3 +1,5 @@
+///Configurando conexão com banco de dados
+
 const  Sequelise  = require ('sequelize');
 const connection = new Sequelise(
   'SGH',
