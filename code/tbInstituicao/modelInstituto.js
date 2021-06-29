@@ -1,4 +1,4 @@
-//criando tabelas de institutos no banco
+//criando tabelas de institutos no banco de dados
 
 const Sequelise = require('sequelize')
 const connection = require('../databases/databases')
