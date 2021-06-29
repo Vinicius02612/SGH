@@ -24,12 +24,15 @@
      `Turno:`\
           -> Dias Semena,\
           -> Quantidades de aulas por dia\
+          -> hora da aula\
       `Curso/Ensino:`\
           -> Nome da Ensino ou Curso,\
           -> Sigla\   
       `Disciplina:`\
           -> Nome da Disciplina,\
           -> Sigla\
+          -> Professor\
+          ->instituição
 `Sessaõ do Responsavel:`\
      -> Nome completo,\
      -> E-mail,\

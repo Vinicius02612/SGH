@@ -3,14 +3,19 @@ const app = express();
 const connection = require('./databases/databases')
 
 const tb_instituto = require('./tbInstituicao/modelInstituto')
+const user = require('./tb_cadastro/modelCadastro')
+
+
+controllerUser = require('./tb_cadastro/controller')
+
+app.set('view engine', 'ejs')
+app.use(express.static('public'))
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
 
-app.get("/", (req, res)=>{
-  res.send("<h1>Hello Word<h1>")
-});
+
 
 //conectando ao banco de dados
 connection
@@ -23,6 +28,13 @@ connection
       
       )
 
-app.listen(8080, ()=>{
+      
+ app.use("/",controllerUser)
+
+ app.get("/",(req , res)=>{
+   res.render("")
+ })
+
+app.listen(8000, ()=>{
     console.log("servidor executano com sucesso...")
 })

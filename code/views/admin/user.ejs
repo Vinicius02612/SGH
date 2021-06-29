@@ -1,0 +1,61 @@
+<%- include ('../partials/header.ejs'  ) %>
+<%- include ('../partials/navbar.ejs'  ) %>
+
+<div class="container">
+  <br>
+  <hr>
+  <div class="card">
+    <div class="card-header">
+      <h2>Cadastro do Usuário</h2>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="card-body">
+      <form  method="POST" action="/cadastrar/save ">
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <br>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Seu Nome">
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="surname">SobreNome</label>
+          <input type="text" class="form-control" id="surname" aria-describedby="emailHelp" placeholder="Sobre Nome">
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="email">Endereço de email</label>
+          <br>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email">
+          <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <br>
+          <input type="password" class="form-control" id="password" placeholder="Senha">
+          <small id="emailHelp" class="form-text text-muted">Crie uma Senha</small>
+        </div>
+        
+        <br>
+        <br>
+       
+    
+         <button type="submit" class="btn btn-success">Cadastrar</button>
+
+     
+        
+      </form>
+    </div>
+
+  </div>
+  
+</div>
+
+<%- include ( '../partials/footer.ejs'  ) %>
