@@ -1,3 +1,5 @@
+//criando tabelas no banco
+
 const Sequelise = require('sequelize')
 const connection = require('../databases/databases')
 
