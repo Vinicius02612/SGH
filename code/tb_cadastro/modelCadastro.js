@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 const connection = require('../databases/databases')
 
 
-//criando  tabela de cadastro...
+//criando  tabela de cadastro de usuários...
 const user = connection.define('user',{
   name:{
     type:Sequelize.STRING,
