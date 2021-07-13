@@ -22,8 +22,11 @@ router.post("/cadastrar/save",(req, res)=>{
   }).then(()=>{
     res.redirect("/")
   })
-  
-    
+     
+})
+
+router.get("/admin/login", (req, res) =>{
+  res.render("admin/login")
 })
 
 module.exports = router
