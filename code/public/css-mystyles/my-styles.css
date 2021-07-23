@@ -1,0 +1,96 @@
+:root{
+    --green:#2E783E;
+    --font-nanum: 'Nanum Gothic', sans-serif;
+    --font-roboto: 'Roboto Condensed', sans-serif;
+}
+
+
+
+#header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: var(--green);
+    font-family: var(--font-nanum);
+    font-weight: bold;
+    color: white;
+}
+#container{
+
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+#container #img{
+    height: 602px;
+    width: 802px;
+    background: url('../imgs/img-login.svg');
+    margin-right: 100px;
+
+}
+
+#container #card{
+    height:382.94px ;
+    width: 407px;
+
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+#container #card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--green);
+    color: white;
+}
+
+#card-body{
+    margin-top: 40px;
+}
+
+#forms-group{
+    width: 100%;
+    padding: 10px;
+  
+    font-family: var(--font-nanum);
+    font-weight: bold;
+    
+}
+
+#forms-group input{
+    width: 385px;
+    height: 39px;
+ 
+
+    border-radius: 10px;
+}
+
+#card-body #btn{
+
+    margin-left: 100px;
+    margin-top: 20px;
+    background: var(--green);
+
+    width: 171px;
+    height: 43px ;
+
+    color: white;
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+#card-body a{
+    color: var(--green);
+    padding: 20px;
+}
